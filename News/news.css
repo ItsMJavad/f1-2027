@@ -1,0 +1,33 @@
+body {
+    height: unset;
+}
+
+.container {
+    width: 95%;
+    max-width: 70rem;
+    margin: 3rem auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+
+.container h1 {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.container p {
+    color: #cfcfcf;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
