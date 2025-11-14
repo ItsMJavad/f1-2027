@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="index/f1-logo.avif">
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <div class="login">
+            <div class="header">
+                <a href="index.html"><img src="index/back.avif" alt="back" title="Back"></a>
+                <h1>Login</h1>
+            </div>
+            <form action="">
+                <div class="login-name">
+                    <input type="text" name="username" id="login-username" required>
+                    <label for="login-username">Name (UserName)</label>
+                </div>
+                <div class="login-password">
+                    <input type="password" name="password" id="login-password" required>
+                    <label for="login-password">Password</label>
+                    <img src="index/hide.avif" alt="show/hide" onclick="eye(this)">
+                </div>
+                <label for="agreement" class="agreement"><input type="checkbox" name="agreement" id="agreement"
+                        required>I Agree to
+                    Terms and
+                    Conditions of
+                    Use.
+                </label>
+                <button type="submit" class="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <p class="changer">Create account</p>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
