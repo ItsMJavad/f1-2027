@@ -53,6 +53,10 @@
     font-weight: 900;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     background-color: #1b1b1b;
@@ -67,6 +71,9 @@ p {
 
 main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -78,6 +85,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #252525;
+    z-index: 1000;
 }
 
 .quotes {
@@ -122,6 +130,10 @@ header {
     width: 7rem;
     height: 4rem;
     object-fit: contain;
+}
+
+.logos img[alt="fia"] {
+    transform: scale(0.8);
 }
 
 .menu {
@@ -349,8 +361,7 @@ header {
     height: 28rem;
     background-image: url(News/images/top-news.jpg);
     background-position: center;
-    background-size: cover;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 2rem;
     box-sizing: border-box;
@@ -360,34 +371,11 @@ header {
     overflow: hidden;
     box-shadow: 0 0 10px black;
     cursor: pointer;
+    transition: background-size 0.3s ease;
 }
 
 .news-top:hover {
-    animation: zoom-in 0.3s forwards;
-}
-
-.news-top:not(:hover) {
-    animation: zoom-out 0.3s forwards;
-}
-
-@keyframes zoom-in {
-    from {
-        background-size: 100%;
-    }
-
-    to {
-        background-size: 120%;
-    }
-}
-
-@keyframes zoom-out {
-    from {
-        background-size: 120%;
-    }
-
-    to {
-        background-size: 100%;
-    }
+    background-size: 120%;
 }
 
 .news-top p {
@@ -396,7 +384,7 @@ header {
     text-shadow: 0 0 5px black;
     color: #e2e2e2;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.8rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.88), transparent);
     user-select: none;
     -moz-user-select: none;
@@ -432,6 +420,7 @@ header {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
+    transition: background-size 0.3s ease;
 }
 
 .news1 {
@@ -442,16 +431,14 @@ header {
     background-image: url(News/images/news2.jpg);
 }
 
+.news3 {
+    background-image: url(News/images/news3.jpg);
+}
+
 .news1:hover,
 .news2:hover,
 .news3:hover {
-    animation: zoom-in 0.3s ease forwards;
-}
-
-.news1:not(:hover),
-.news2:not(:hover),
-.news3:not(:hover) {
-    animation: zoom-out 0.3s ease forwards;
+    background-size: 120%;
 }
 
 .news1 p,

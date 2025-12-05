@@ -13,13 +13,10 @@ const quotes = [
 ];
 const quoteP = document.getElementById("quote");
 quoteP.innerHTML = quotes[qnumber];
-function eye(el) {
-    const passwordInput = document.getElementById("login-password");
-    el.classList.toggle("show");
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-    } else {
-        passwordInput.type = "password"
-    }
-    passwordInput.focus()
-}
+const dropdowns = document.querySelectorAll(".flex-dropdown");
+dropdowns.forEach(dropdown => {
+    const dropdownImg = dropdown.querySelector("img");
+    dropdown.addEventListener('click', () => {
+        dropdownImg.classList.toggle("active");
+    })
+})
