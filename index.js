@@ -19,4 +19,30 @@ dropdowns.forEach(dropdown => {
     dropdown.addEventListener('click', () => {
         dropdownImg.classList.toggle("active");
     })
+});
+const mobileMenuShow = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenuClose = document.getElementById("mobile-menu-close");
+mobileMenuShow.addEventListener('click', () => {
+    mobileMenu.style.left = 0;
+});
+mobileMenuClose.addEventListener('click', () => {
+    mobileMenu.style.left = "100%";
 })
+const accButton = document.querySelector(".acc-manager");
+const mobileAccButton = document.querySelector(".mobile-acc-manager");
+const userName = localStorage.getItem("username");
+if (userName !== null) {
+    accButton.innerHTML = `<button type="button" onclick="logout()">
+                            ${userName}
+                        </button>`;
+    mobileAccButton.innerHTML = `<p>${userName}</p>`;
+    mobileAccButton.href = "index.html";
+    mobileAccButton.addEventListener('click', () => {
+        logout();
+    })
+}
+function logout() {
+    localStorage.clear();
+    window.location.reload();
+}

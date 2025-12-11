@@ -70,10 +70,12 @@ p {
 }
 
 main {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 header {
@@ -85,7 +87,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #252525;
-    z-index: 1000;
+    z-index: 900;
 }
 
 .quotes {
@@ -161,6 +163,8 @@ header {
     cursor: pointer;
     box-sizing: border-box;
     transition: border 0.1s ease;
+    text-decoration: none;
+    color: #e2e2e2;
 }
 
 .schedule:hover {
@@ -339,6 +343,150 @@ header {
     box-shadow: 0 0 10px red;
 }
 
+.mobile-menu-btn {
+    border: 1px solid #e2e2e2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    margin: 0 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:active {
+    background-color: #ffffff30;
+}
+
+.mobile-menu-btn img {
+    width: 1.4rem;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    pointer-events: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    background-color: #252525;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: left 0.3s ease;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+}
+
+.mobile-menu-close {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+
+.mobile-menu-close img {
+    width: 2rem;
+    height: auto;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+.mobile-menu-close img:hover,
+.mobile-menu-close img:active {
+    background-color: #ffffff30;
+}
+
+.mobile-menu-item {
+    width: 100%;
+    padding: 1rem 0.7rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.mobile-menu-item:last-child {
+    border-bottom: unset;
+}
+
+.mobile-menu-item:hover,
+.mobile-menu-item:active {
+    background-color: #ffffff30;
+}
+
+.mobile-schedule {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.mobile-standings,
+.mobile-seasons {
+    height: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+
+.mobile-standings:hover,
+.mobile-standings:active {
+    height: 9rem;
+}
+
+.mobile-seasons:hover,
+.mobile-seasons:active {
+    height: 8.6rem;
+}
+
+.mobile-standings p,
+.mobile-standings p {
+    padding-bottom: 0.5rem;
+    pointer-events: none;
+}
+
+#mobile-dropdown {
+    width: 0.9rem;
+    transform: rotate(-90deg);
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.mobile-standings a,
+.mobile-seasons a {
+    width: 100%;
+    padding: 0.8rem 0;
+    color: #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.mobile-standings a:last-child,
+.mobile-seasons a:last-child {
+    border-bottom: unset;
+    padding-bottom: 0;
+}
+
+.mobile-acc-manager {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
 .news {
     width: 100%;
     margin: 3rem 0;
@@ -452,4 +600,61 @@ header {
     text-shadow: 0 0 5px black;
     text-align: center;
     background: linear-gradient(0deg, rgb(32, 32, 32), transparent);
+}
+
+@media (max-width: 600px) {
+    .quotes p {
+        font-size: 0.9rem;
+    }
+
+    .logos img {
+        width: 5.5rem;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .menu,
+    .acc-manager {
+        display: none;
+    }
+
+    .news {
+        flex-direction: column;
+    }
+
+
+    .news-top {
+        width: 95%;
+        height: 16rem;
+        margin: auto;
+    }
+
+    .news-top p {
+        font-size: 1.2rem;
+    }
+
+    .side-news {
+        width: 95%;
+        height: max-content;
+        flex-direction: row;
+    }
+
+    .side-news a {
+        width: 32%;
+    }
+
+    .news1,
+    .news2,
+    .news3 {
+        width: 100%;
+        height: 5rem;
+    }
+
+    .news1 p,
+    .news2 p,
+    .news3 p {
+        font-size: 0.8rem;
+    }
 }

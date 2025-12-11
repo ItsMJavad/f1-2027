@@ -31,3 +31,14 @@ body {
     margin: 0 1rem;
     font-size: 1.1rem;
 }
+
+@media (max-width: 600px) {
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+}

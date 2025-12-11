@@ -48,8 +48,7 @@ h1 {
     width: 100%;
     max-width: 60rem;
     height: max-content;
-    min-height: 6rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -126,6 +125,7 @@ h1 {
 
 .name p {
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .points {

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="schedule.css">
+    <link rel="icon" href="index/f1-logo.avif">
+    <title>F1 Schedule</title>
+</head>
+
+<body>
+    <div class="quotes">
+        <p id="quote">.</p>
+    </div>
+    <main>
+        <header>
+            <div class="nav-bar">
+                <div class="logos">
+                    <img src="index/fia logo.avif" alt="fia">
+                    <a href="index.html"><img src="index/f1-logo.avif" alt="f1"></a>
+                </div>
+                <div class="menu">
+                    <a href="schedule.html" class="schedule">
+                        <p>Schedule</p>
+                    </a>
+                    <div class="menu-standing">
+                        <p>Standings</p>
+                        <img src="index/dropdown.png" alt="dropdown" class="dropdown">
+                        <div class="menu-standing-dropdown">
+                            <a href="standings/driver-standings.html">Driver Standings</a>
+                            <a href="standings/team-standings.html">Team Standings</a>
+                        </div>
+                    </div>
+                    <div class="seasons">
+                        <p>Season</p>
+                        <img src="index/dropdown.png" alt="dropdown" class="dropdown">
+                        <div class="seasons-dropdown">
+                            <a href="https://itsmjavad.github.io/formula1/" target="_blank">2025</a>
+                            <a href="https://itsmjavad.github.io/f1-2026/" target="_blank">2026</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-manager">
+                    <a href="login.html">
+                        <button type="button">
+                            Login / Sign Up
+                        </button>
+                    </a>
+                </div>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <img src="index/mobile-menu.png" alt="menu">
+                </div>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-close">
+                <img src="index/mobile-menu-close.png" alt="close" id="mobile-menu-close">
+            </div>
+            <a class="mobile-schedule mobile-menu-item" href="schedule.html">
+                <p>Schedule</p>
+            </a>
+            <div class="mobile-standings mobile-menu-item">
+                <p>Standings <img src="index/dropdown.png" alt="dropdown" id="mobile-dropdown"></p>
+                <a href="standings/driver-standings.html">Driver Standings</a>
+                <a href="standings/team-standings.html">Team Standings</a>
+            </div>
+            <div class="mobile-seasons mobile-menu-item">
+                <p>Seasons <img src="index/dropdown.png" alt="dropdown" id="mobile-dropdown"></p>
+                <a href="https://itsmjavad.github.io/formula1/" target="_blank">2025</a>
+                <a href="https://itsmjavad.github.io/f1-2026/" target="_blank">2026</a>
+            </div>
+            <a class="mobile-acc-manager mobile-menu-item" href="login.html">
+                <p>Login / Sign Up</p>
+            </a>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>2027 F1 Schedule</h1>
+            </div>
+            <div class="races">
+                <div class="race1 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>1. Singapore Grand Prix</strong></p>
+                            <img src="schedule/singapore.avif" alt="singapore">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Marina Bay Street Circuit</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:47.825)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (18:49.097)</strong></p>
+                        <p class="p2">2. Max Verstappen (+10.226)</p>
+                        <p class="p3">3. Gabriel Bortoleto (+47.092)</p>
+                    </div>
+                </div>
+                <div class="race2 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>2. Brazilian Grand Prix</strong></p>
+                            <img src="schedule/brazil.avif" alt="brazil">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Autódromo José Carlos Pace</i></p>
+                        <p class="fl">Fastest Lap: Charles Leclerc (1:10.413)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Charles Leclerc (11:57.508)</strong></p>
+                        <p class="p2">2. Oscar Piastri (+18.218)</p>
+                        <p class="p3">3. Javad Nick (+24.950)</p>
+                    </div>
+                </div>
+                <div class="race3 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>3. Japanese Grand Prix</strong></p>
+                            <img src="schedule/japan.avif" alt="japan">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Suzuka Circuit</i></p>
+                        <p class="fl">Fastest Lap: Oscar Piastri (1:33.106)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (15:46.726)</strong></p>
+                        <p class="p2">2. Oscar Piastri (+12.160)</p>
+                        <p class="p3">3. Lewis Hamilton (+13.839)</p>
+                    </div>
+                </div>
+                <div class="race4 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>4. Italian Grand Prix</strong></p>
+                            <img src="schedule/italy.avif" alt="italy">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Imola Circuit</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:20.173)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (13:47.230)</strong></p>
+                        <p class="p2">2. Max Verstappen (+5.410)</p>
+                        <p class="p3">3. Charles Leclerc (+37.676)</p>
+                    </div>
+                </div>
+                <div class="race5 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>5. Bahrain Grand Prix</strong></p>
+                            <img src="schedule/bahrain.avif" alt="bahrain">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Bahrain International Circuit</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:33.983)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (15:48.142)</strong></p>
+                        <p class="p2">2. Charles Leclerc (+9.175)</p>
+                        <p class="p3">3. Oscar Piastri (+31.534)</p>
+                    </div>
+                </div>
+                <div class="race6 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>6. Las Vegas Grand Prix</strong></p>
+                            <img src="schedule/usa.avif" alt="usa">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Las Vegas Street Circuit</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:27.447)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (15:15.157)</strong></p>
+                        <p class="p2">2. Lando Norris (+14.662)</p>
+                        <p class="p3">3. Charles Leclerc (+27.287)</p>
+                    </div>
+                </div>
+                <div class="race7 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>7. Austrian Grand Prix</strong></p>
+                            <img src="schedule/austria.avif" alt="austria">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Red Bull Ring</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:07.961)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (11:37.384)</strong></p>
+                        <p class="p2">2. Lewis Hamilton (+10.886)</p>
+                        <p class="p3">3. Charles Leclerc (+12.579)</p>
+                    </div>
+                </div>
+                <div class="race8 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>8. Italian Grand Prix</strong></p>
+                            <img src="schedule/italy.avif" alt="italy">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Circuit de Monza</i></p>
+                        <p class="fl">Fastest Lap: Max Verstappen (1:24.580)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (15:15.157)</strong></p>
+                        <p class="p2">2. Max Verstappen (+6.688)</p>
+                        <p class="p3">3. Lando Norris (+23.448)</p>
+                    </div>
+                </div>
+                <div class="race9 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>9. Turkish Grand Prix</strong></p>
+                            <img src="schedule/turkey.avif" alt="turkey">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Istanbul Park</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:28.640)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Lewis Hamilton (15:06.714)</strong></p>
+                        <p class="p2">2. Max Verstappen (+1.102)</p>
+                        <p class="p3">3. Oscar Piastri (+9.922)</p>
+                    </div>
+                </div>
+                <div class="race10 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>10. Monaco Grand Prix</strong></p>
+                            <img src="schedule/monaco.avif" alt="monaco">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Circuit de Monaco</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:18.268)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (13:30.200)</strong></p>
+                        <p class="p2">2. Max Verstappen (+13.233)</p>
+                        <p class="p3">3. Charles Leclerc (+22.057)</p>
+                    </div>
+                </div>
+                <div class="race11 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>11. Canadian Grand Prix</strong></p>
+                            <img src="schedule/canada.avif" alt="canada">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Circuit Gilles Villeneuve</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:15.103)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (12:52.417)</strong></p>
+                        <p class="p2">2. Charles Leclerc (+42.935)</p>
+                        <p class="p3">3. Lewis Hamilton (+1:06.461)</p>
+                    </div>
+                </div>
+                <div class="race12 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>12. Dutch Grand Prix</strong></p>
+                            <img src="schedule/netherlands.avif" alt="netherlands">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Zandvoort</i></p>
+                        <p class="fl">Fastest Lap: Charles Leclerc (1:14.318)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (13:03.868)</strong></p>
+                        <p class="p2">2. Charles Leclerc (+7.026)</p>
+                        <p class="p3">3. Gabriel Bortoleto (+8.656)</p>
+                    </div>
+                </div>
+                <div class="race13 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>13. Azerbaijan Grand Prix</strong></p>
+                            <img src="schedule/azerbaijan.avif" alt="azerbaijan">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Baku GP</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:46.561)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (17:58.908)</strong></p>
+                        <p class="p2">2. Lewis Hamilton (+0.792)</p>
+                        <p class="p3">3. Max Verstappen (+16.796)</p>
+                    </div>
+                </div>
+                <div class="race14 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>14. Belgian Grand Prix</strong></p>
+                            <img src="schedule/belgium.avif" alt="belgium">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Spa-Francorchamps</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:49.078)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Lewis Hamilton (18:42.886)</strong></p>
+                        <p class="p2">2. Javad Nick (+0.262)</p>
+                        <p class="p3">3. Max Verstappen (+8.871)</p>
+                    </div>
+                </div>
+                <div class="race15 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>15. Miami Grand Prix</strong></p>
+                            <img src="schedule/usa.avif" alt="usa">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Miami International Autodrome</i></p>
+                        <p class="fl">Fastest Lap: Lewis Hamilton (1:31.599)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (16:07.832)</strong></p>
+                        <p class="p2">2. George Russell (+8.987)</p>
+                        <p class="p3">3. Oscar Piastri (+45.571)</p>
+                    </div>
+                </div>
+                <div class="race16 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>16. Abu Dhabi Grand Prix</strong></p>
+                            <img src="schedule/uae.avif" alt="uae">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Yas Marina Circuit</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:28.456)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (15:20.593)</strong></p>
+                        <p class="p2">2. Charles Leclerc (+2.315)</p>
+                        <p class="p3">3. Lewis Hamilton (+14.495)</p>
+                    </div>
+                </div>
+                <div class="race17 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>17. Spanish Grand Prix</strong></p>
+                            <img src="schedule/spain.avif" alt="spain">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Circuit de Barcelona-Catalunya</i></p>
+                        <p class="fl">Fastest Lap: Lewis Hamilton (1:21.587)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Charles Leclerc (14:04.699)</strong></p>
+                        <p class="p2">2. Lewis Hamilton (+8.427)</p>
+                        <p class="p3">3. Javad Nick (+13.027)</p>
+                    </div>
+                </div>
+                <div class="race18 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>18. Mexican Grand Prix</strong></p>
+                            <img src="schedule/mexico.avif" alt="mexico">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Autódromo Hermanos Rodríguez</i></p>
+                        <p class="fl">Fastest Lap: Charles Leclerc (1:17.158)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (13:27.209)</strong></p>
+                        <p class="p2">2. Charles Leclerc (+0.417)</p>
+                        <p class="p3">3. Oscar Pistri (+13.143)</p>
+                    </div>
+                </div>
+                <div class="race19 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>19. Saudi Arabian Grand Prix</strong></p>
+                            <img src="schedule/saudi.avif" alt="saudi">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Jeddah Corniche Circuit</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:35.984)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (16:46.021)</strong></p>
+                        <p class="p2">2. Lewis Hamilton (+31.458)</p>
+                        <p class="p3">3. Charles Leclerc(+36.609)</p>
+                    </div>
+                </div>
+                <div class="race20 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>20. British Grand Prix</strong></p>
+                            <img src="schedule/uk.avif" alt="uk">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Silverstone GP</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:32.556)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Javad Nick (15:57.518)</strong></p>
+                        <p class="p2">2. Charles Leclerc (+0.896)</p>
+                        <p class="p3">3. Nico Hulkenberg (+39.460)</p>
+                    </div>
+                </div>
+                <div class="race21 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>21. Australian Grand Prix</strong></p>
+                            <img src="schedule/australia.avif" alt="australia">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Albert Park</i></p>
+                        <p class="fl">Fastest Lap: Javad Nick (1:27.573)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Charles Leclerc (15:08.421)</strong></p>
+                        <p class="p2">2. Javad Nick (+17.637)</p>
+                        <p class="p3">3. George Russell (+18.288)</p>
+                    </div>
+                </div>
+                <div class="race22 card">
+                    <div class="race-info">
+                        <div class="title">
+                            <p><strong>22. Qatar Grand Prix</strong></p>
+                            <img src="schedule/qatar.avif" alt="qatar">
+                        </div>
+                        <p class="track-name" style="font-weight: 300;"><i>Losail</i></p>
+                        <p class="fl">Fastest Lap: Charles Leclerc (1:27.826)</p>
+                    </div>
+                    <div class="race-standings">
+                        <p class="p1"><strong>1. Charles Leclerc (15:05.791)</strong></p>
+                        <p class="p2">2. Max Verstappen (+22.938)</p>
+                        <p class="p3">3. Javad Nick (+26.705)</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

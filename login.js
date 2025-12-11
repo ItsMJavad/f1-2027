@@ -15,4 +15,5 @@ window.addEventListener('submit', () => {
     const accPass = document.getElementById("login-password").value;
     localStorage.setItem("username", accName);
     localStorage.setItem("password", accPass);
+    window.location.href = 'index.html';
 });
