@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="races.css">
+    <link rel="icon" href="../index/f1-logo.avif">
+    <title>2027 Sao Paulo Grand Prix</title>
+</head>
+
+<body>
+    <div class="quotes">
+        <p id="quote">.</p>
+    </div>
+    <main>
+        <header>
+            <div class="nav-bar">
+                <div class="logos">
+                    <img src="../index/fia logo.avif" alt="fia">
+                    <a href="../index.html"><img src="../index/f1-logo.avif" alt="f1"></a>
+                </div>
+                <div class="menu">
+                    <a href="../schedule.html" class="schedule">
+                        <p>Schedule</p>
+                    </a>
+                    <div class="menu-standing">
+                        <p>Standings</p>
+                        <img src="../index/dropdown.png" alt="dropdown" class="dropdown">
+                        <div class="menu-standing-dropdown">
+                            <a href="../standings/driver-standings.html">Driver Standings</a>
+                            <a href="../standings/team-standings.html">Team Standings</a>
+                        </div>
+                    </div>
+                    <div class="seasons">
+                        <p>Season</p>
+                        <img src="../index/dropdown.png" alt="dropdown" class="dropdown">
+                        <div class="seasons-dropdown">
+                            <a href="https://itsmjavad.github.io/formula1/" target="_blank">2025</a>
+                            <a href="https://itsmjavad.github.io/f1-2026/" target="_blank">2026</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-manager">
+                    <a href="../login.html">
+                        <button type="button">
+                            Login / Sign Up
+                        </button>
+                    </a>
+                </div>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <img src="../index/mobile-menu.png" alt="menu">
+                </div>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-close">
+                <img src="../index/mobile-menu-close.png" alt="close" id="mobile-menu-close">
+            </div>
+            <a class="mobile-schedule mobile-menu-item" href="../schedule.html">
+                <p>Schedule</p>
+            </a>
+            <div class="mobile-standings mobile-menu-item">
+                <p>Standings <img src="../index/dropdown.png" alt="dropdown" id="mobile-dropdown"></p>
+                <a href="../standings/driver-standings.html">Driver Standings</a>
+                <a href="../standings/team-standings.html">Team Standings</a>
+            </div>
+            <div class="mobile-seasons mobile-menu-item">
+                <p>Seasons <img src="../index/dropdown.png" alt="dropdown" id="mobile-dropdown"></p>
+                <a href="https://itsmjavad.github.io/formula1/" target="_blank">2025</a>
+                <a href="https://itsmjavad.github.io/f1-2026/" target="_blank">2026</a>
+            </div>
+            <a class="mobile-acc-manager mobile-menu-item" href="../login.html">
+                <p>Login / Sign Up</p>
+            </a>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>2027 Round 2 (Sao Paulo) Results</h1>
+            </div>
+            <div class="btns">
+                <button type="button" id="race-results">Race</button>
+                <button type="button" id="quali-results">Qualifying</button>
+            </div>
+            <div class="race-result result">
+                <table>
+                    <tr class="table-header">
+                        <td class="position">Pos.</td>
+                        <td class="driver-name">Driver Name</td>
+                        <td class="team-name">Team</td>
+                        <td class="time">Time(gap)</td>
+                    </tr>
+                    <tr class="first">
+                        <td class="position">1</td>
+                        <td class="driver-name">Charles Leclerc</td>
+                        <td class="team-name">Ferrari</td>
+                        <td class="time">11:57.508</td>
+                    </tr>
+                    <tr class="second">
+                        <td class="position">2</td>
+                        <td class="driver-name">Oscar Piastri</td>
+                        <td class="team-name">McLaren</td>
+                        <td class="time">+18.218</td>
+                    </tr>
+                    <tr class="third">
+                        <td class="position">3</td>
+                        <td class="driver-name">Javad Nick</td>
+                        <td class="team-name">Ferrari</td>
+                        <td class="time">+24.950</td>
+                    </tr>
+                    <tr class="fourth">
+                        <td class="position">4</td>
+                        <td class="driver-name">Lando Norris</td>
+                        <td class="team-name">McLaren</td>
+                        <td class="time">+25.355</td>
+                    </tr>
+                    <tr class="fifth">
+                        <td class="position">5</td>
+                        <td class="driver-name">Lewis Hamilton</td>
+                        <td class="team-name">Mercedes</td>
+                        <td class="time">+26.373</td>
+                    </tr>
+                    <tr class="sixth">
+                        <td class="position">6</td>
+                        <td class="driver-name">Max Verstappen</td>
+                        <td class="team-name">RedBull</td>
+                        <td class="time">+27.201</td>
+                    </tr>
+                    <tr class="seventh">
+                        <td class="position">7</td>
+                        <td class="driver-name">Yoki Tsunoda</td>
+                        <td class="team-name">RedBull</td>
+                        <td class="time">+29.562</td>
+                    </tr>
+                    <tr class="eigth">
+                        <td class="position">8</td>
+                        <td class="driver-name">Gabriel Bortoleto</td>
+                        <td class="team-name">Sauber</td>
+                        <td class="time">+35.947</td>
+                    </tr>
+                    <tr class="nineth">
+                        <td class="position">9</td>
+                        <td class="driver-name">Nico Hulkenberg</td>
+                        <td class="team-name">Sauber</td>
+                        <td class="time">+40.121</td>
+                    </tr>
+                    <tr class="tenth">
+                        <td class="position">10</td>
+                        <td class="driver-name">George Russell</td>
+                        <td class="team-name">Mercedes</td>
+                        <td class="time">+41.567</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="qualifying-result result">
+                <table>
+                    <tr class="table-header">
+                        <td class="position">Pos.</td>
+                        <td class="driver-name">Driver Name</td>
+                        <td class="team-name">Team</td>
+                        <td class="time">Best Lap (gap)</td>
+                    </tr>
+                    <tr class="first">
+                        <td class="position">1</td>
+                        <td class="driver-name">Lando Norris</td>
+                        <td class="team-name">McLaren</td>
+                        <td class="time">1:10.262</td>
+                    </tr>
+                    <tr class="second">
+                        <td class="position">2</td>
+                        <td class="driver-name">Oscar Piastri</td>
+                        <td class="team-name">McLaren</td>
+                        <td class="time">+0.124</td>
+                    </tr>
+                    <tr class="third">
+                        <td class="position">3</td>
+                        <td class="driver-name">Lewis Hamilton</td>
+                        <td class="team-name">Mercedes</td>
+                        <td class="time">+0.137</td>
+                    </tr>
+                    <tr class="fourth">
+                        <td class="position">4</td>
+                        <td class="driver-name">Charles Leclerc</td>
+                        <td class="team-name">Ferrari</td>
+                        <td class="time">+0.149</td>
+                    </tr>
+                    <tr class="fifth">
+                        <td class="position">5</td>
+                        <td class="driver-name">Gabriel Bortoleto</td>
+                        <td class="team-name">Sauber</td>
+                        <td class="time">+0.727</td>
+                    </tr>
+                    <tr class="sixth">
+                        <td class="position">6</td>
+                        <td class="driver-name">Max Verstappen</td>
+                        <td class="team-name">RedBull</td>
+                        <td class="time">+0.900</td>
+                    </tr>
+                    <tr class="seventh">
+                        <td class="position">7</td>
+                        <td class="driver-name">George Russell</td>
+                        <td class="team-name">Mercedes</td>
+                        <td class="time">+1.754</td>
+                    </tr>
+                    <tr class="eigth">
+                        <td class="position">8</td>
+                        <td class="driver-name">Yoki Tsunoda</td>
+                        <td class="team-name">RedBull</td>
+                        <td class="time">+1.918</td>
+                    </tr>
+                    <tr class="nineth">
+                        <td class="position">9</td>
+                        <td class="driver-name">Nico Hulkenberg</td>
+                        <td class="team-name">Sauber</td>
+                        <td class="time">+2.378</td>
+                    </tr>
+                    <tr class="tenth">
+                        <td class="position">10</td>
+                        <td class="driver-name">Javad Nick</td>
+                        <td class="team-name">Ferrari</td>
+                        <td class="time">+3.458</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="../index.js"></script>
+    <script src="races.js"></script>
+</body>
+
+</html>

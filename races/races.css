@@ -1,0 +1,109 @@
+.container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.header {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+    padding: 0 0 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.btns button {
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #cfcfcf;
+    cursor: pointer;
+}
+
+#race-results {
+    background-color: #e2e2e22f;
+}
+
+.btns button:hover {
+    background-color: #e2e2e22f !important;
+}
+
+.result {
+    width: 100%;
+    height: max-content;
+}
+
+.race-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qualifying-result {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    background-color: #00000080;
+    border-radius: 0.7rem;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #ffffff7e;
+    padding: 0.4rem 0.5rem;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 500;
+    color: #e2e2e2;
+}
+
+table td {
+    flex: 1;
+    overflow: hidden;
+}
+
+table td:first-child {
+    flex: unset;
+    width: 10%;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+.driver-name {
+    font-weight: 700;
+}
+
+.table-header {
+    color: #e2e2e273;
+    font-family: 'Courier New';
+    font-size: 0.9rem;
+    font-weight: 300;
+}

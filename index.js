@@ -31,18 +31,39 @@ mobileMenuClose.addEventListener('click', () => {
 })
 const accButton = document.querySelector(".acc-manager");
 const mobileAccButton = document.querySelector(".mobile-acc-manager");
-const userName = localStorage.getItem("username");
-if (userName !== null) {
-    accButton.innerHTML = `<button type="button" onclick="logout()">
-                            ${userName}
-                        </button>`;
-    mobileAccButton.innerHTML = `<p>${userName}</p>`;
-    mobileAccButton.href = "index.html";
-    mobileAccButton.addEventListener('click', () => {
-        logout();
-    })
+if (localStorage.getItem("currentAcc") != null) {
+    const currentAcc = localStorage.getItem("currentAcc");
+    const firstname = JSON.parse(localStorage.getItem("firstname"))[currentAcc];
+    const username = JSON.parse(localStorage.getItem("username"))[currentAcc];
+    const email = JSON.parse(localStorage.getItem("email"))[currentAcc];
+    const age = JSON.parse(localStorage.getItem("age"))[currentAcc];
+    const password = JSON.parse(localStorage.getItem("password"))[currentAcc];
+    accButton.querySelector("button").innerText = firstname;
+    const downArrow = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    downArrow.setAttribute("fill", "#e2e2e2be");
+    downArrow.setAttribute("width", "14px");
+    downArrow.setAttribute("height", "14px");
+    downArrow.setAttribute("viewBox", "0 0 24 24");
+    const svgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    svgPath.setAttribute("d", "M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z");
+    downArrow.appendChild(svgPath);
+    accButton.querySelector("button").appendChild(downArrow);
+    accButton.classList.add("active");
 }
 function logout() {
-    localStorage.clear();
+    localStorage.removeItem("currentAcc");
+    accButton.classList.remove("active");
     window.location.reload();
+};
+// function delAcc() {
+//     accButton.classList.remove("active");
+//     JSON.parse(localStorage.getItem("firstname")).splice(currentAcc, 1);
+//     window.location.reload();
+// }
+document.querySelector(".acc-manager.active").addEventListener('click', accManager);
+function accManager() {
+    event.preventDefault();
+    accButton.querySelector(".acc-drop").classList.toggle('active');
 }
+accButton.querySelector(".logout").addEventListener('click', logout);
+accButton.querySelector(".delete-acc").addEventListener("click", logout);

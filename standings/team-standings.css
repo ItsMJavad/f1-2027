@@ -79,12 +79,12 @@ h1 {
 }
 
 .mclaren {
-    order: 3;
+    order: 5;
     background: linear-gradient(90deg, #8a4500, #f77c00);
 }
 
 .redbull {
-    order: 4;
+    order: 3;
     background: linear-gradient(90deg, #000970, #1D19AC);
 }
 
@@ -94,7 +94,7 @@ h1 {
 }
 
 .sauber {
-    order: 5;
+    order: 4;
     background: linear-gradient(90deg, #004900, #00c200);
 }
 
