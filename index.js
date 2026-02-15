@@ -31,13 +31,14 @@ mobileMenuClose.addEventListener('click', () => {
 })
 const accButton = document.querySelector(".acc-manager");
 const mobileAccButton = document.querySelector(".mobile-acc-manager");
+let currentAcc, firstname, username, email, age, password;
 if (localStorage.getItem("currentAcc") != null) {
-    const currentAcc = localStorage.getItem("currentAcc");
-    const firstname = JSON.parse(localStorage.getItem("firstname"))[currentAcc];
-    const username = JSON.parse(localStorage.getItem("username"))[currentAcc];
-    const email = JSON.parse(localStorage.getItem("email"))[currentAcc];
-    const age = JSON.parse(localStorage.getItem("age"))[currentAcc];
-    const password = JSON.parse(localStorage.getItem("password"))[currentAcc];
+    currentAcc = localStorage.getItem("currentAcc");
+    firstname = JSON.parse(localStorage.getItem("firstname"))[currentAcc];
+    username = JSON.parse(localStorage.getItem("username"))[currentAcc];
+    email = JSON.parse(localStorage.getItem("email"))[currentAcc];
+    age = JSON.parse(localStorage.getItem("age"))[currentAcc];
+    password = JSON.parse(localStorage.getItem("password"))[currentAcc];
     accButton.querySelector("button").innerText = firstname;
     const downArrow = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     downArrow.setAttribute("fill", "#e2e2e2be");
@@ -55,15 +56,33 @@ function logout() {
     accButton.classList.remove("active");
     window.location.reload();
 };
-// function delAcc() {
-//     accButton.classList.remove("active");
-//     JSON.parse(localStorage.getItem("firstname")).splice(currentAcc, 1);
-//     window.location.reload();
-// }
-document.querySelector(".acc-manager.active").addEventListener('click', accManager);
+function delAcc() {
+    accButton.classList.remove("active");
+    let newFirstname = JSON.parse(localStorage.getItem("firstname"));
+    newFirstname.splice(currentAcc, 1);
+    localStorage.setItem("firstname", JSON.stringify(newFirstname));
+    let newUsername = JSON.parse(localStorage.getItem("username"));
+    newUsername.splice(currentAcc, 1);
+    localStorage.setItem("username", JSON.stringify(newUsername));
+    let newEmail = JSON.parse(localStorage.getItem("email"));
+    newEmail.splice(currentAcc, 1);
+    localStorage.setItem("email", JSON.stringify(newEmail));
+    let newAge = JSON.parse(localStorage.getItem("age"));
+    newAge.splice(currentAcc, 1);
+    localStorage.setItem("age", JSON.stringify(newAge));
+    let newPassword = JSON.parse(localStorage.getItem("password"));
+    newPassword.splice(currentAcc, 1);
+    localStorage.setItem("password", JSON.stringify(newPassword));
+    localStorage.removeItem("currentAcc")
+    window.location.reload();
+}
+if (document.querySelector(".acc-manager.active") != null) {
+    document.querySelector(".acc-manager.active").addEventListener('click', accManager);
+}
 function accManager() {
     event.preventDefault();
     accButton.querySelector(".acc-drop").classList.toggle('active');
 }
 accButton.querySelector(".logout").addEventListener('click', logout);
-accButton.querySelector(".delete-acc").addEventListener("click", logout);
+accButton.querySelector(".delete-acc").addEventListener("click", delAcc);
+console.log(currentAcc + firstname + username + email + age + password)
